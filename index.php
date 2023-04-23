@@ -3,7 +3,8 @@
 require "vendor/autoload.php";
 
 // 1. What does this function session_start() do to the application?
-// _____________________________________________________________________
+// the session start is used to initialize the session that we can used to store data on the server that can be accessed(retrieved data) 
+// across multiple pages of the website. Note that the session_start() should be called at the beginning of the page you want to access its session data.
 
 session_start();
 session_destroy();
