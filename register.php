@@ -4,7 +4,10 @@ require "vendor/autoload.php";
 
 session_start();
 // 2. Why do you think the session variable assignments are wrapped inside an if-else and try-catch statements?
-// _____________________________________________________________________
+// The reason is to check the user input if the $_POST variable has value for the fullname, email, 
+// and birthday before assigning it to its respective session variables
+// Then the try-catch statement is used for error handling if one of the requirements are not fulfilled 
+// the catch block will execute and display an error message indicating the issue.
 
 try {
     if (isset($_POST['fullname'])) {
